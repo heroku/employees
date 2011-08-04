@@ -13,3 +13,4 @@ group :development do
   gem 'nifty-generators'
 end
 gem "mocha", :group => :test
+gem 'texticle', '~> 2.0', :require => 'texticle/rails'
