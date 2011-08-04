@@ -1,0 +1,20 @@
+<% title "Employees" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Hire Date</th>
+  </tr>
+  <% for employee in @employees %>
+    <tr>
+      <td><%= link_to "#{employee.first_name} #{employee.last_name}", employee %></td>
+      <td><%= employee.gender %></td>
+      <td><%= employee.hire_date %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @employees %>
+
+<p><%= link_to "New Employee", new_employee_path %></p>

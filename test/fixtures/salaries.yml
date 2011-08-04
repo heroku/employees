@@ -1,0 +1,11 @@
+one:
+  employee: 
+  salary: 1
+  from_date: 2011-08-03
+  to_date: 2011-08-03
+
+two:
+  employee: 
+  salary: 1
+  from_date: 2011-08-03
+  to_date: 2011-08-03

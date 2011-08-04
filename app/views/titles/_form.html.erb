@@ -1,0 +1,16 @@
+<%= form_for @title do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :employee %><br />
+    <%= f.text_field :employee %>
+  </p>
+  <p>
+    <%= f.label :from_date %><br />
+    <%= f.date_select :from_date %>
+  </p>
+  <p>
+    <%= f.label :to_date %><br />
+    <%= f.date_select :to_date %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

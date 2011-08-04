@@ -1,0 +1,24 @@
+<% title "Salary" %>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @salary.employee %>
+</p>
+<p>
+  <strong>Salary:</strong>
+  <%= @salary.salary %>
+</p>
+<p>
+  <strong>From Date:</strong>
+  <%= @salary.from_date %>
+</p>
+<p>
+  <strong>To Date:</strong>
+  <%= @salary.to_date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_salary_path(@salary) %> |
+  <%= link_to "Destroy", @salary, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", salaries_path %>
+</p>

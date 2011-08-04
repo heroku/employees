@@ -1,0 +1,47 @@
+<% title "#{@employee.first_name} #{@employee.last_name}" %>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @employee.gender %>
+</p>
+<p>
+  <strong>Hire Date:</strong>
+  <%= @employee.hire_date %>
+</p>
+
+<h2>Salary History</h2>
+
+<table class="hor-zebra">
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => "salary", :collection => @employee.salaries %>  
+  </tbody>
+</table>
+
+<h2>Title History</h2>
+
+<table class="hor-zebra">
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => "title", :collection => @employee.titles %>  
+  </tbody>
+</table>
+
+
+<p>
+  <%= link_to "Edit", edit_employee_path(@employee) %> |
+  <%= link_to "Destroy", @employee, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", employees_path %>
+</p>

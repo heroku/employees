@@ -1,0 +1,21 @@
+<% title "Titles" %>
+
+<table>
+  <tr>
+    <th>Employee</th>
+    <th>From Date</th>
+    <th>To Date</th>
+  </tr>
+  <% for title in @titles %>
+    <tr>
+      <td><%= title.employee %></td>
+      <td><%= title.from_date %></td>
+      <td><%= title.to_date %></td>
+      <td><%= link_to "Show", title %></td>
+      <td><%= link_to "Edit", edit_title_path(title) %></td>
+      <td><%= link_to "Destroy", title, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Title", new_title_path %></p>

@@ -1,0 +1,11 @@
+one:
+  first_name: MyString
+  last_name: MyString
+  gender: MyString
+  hire_date: 2011-08-03
+
+two:
+  first_name: MyString
+  last_name: MyString
+  gender: MyString
+  hire_date: 2011-08-03

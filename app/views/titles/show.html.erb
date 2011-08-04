@@ -1,0 +1,20 @@
+<% title "Title" %>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @title.employee %>
+</p>
+<p>
+  <strong>From Date:</strong>
+  <%= @title.from_date %>
+</p>
+<p>
+  <strong>To Date:</strong>
+  <%= @title.to_date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_title_path(@title) %> |
+  <%= link_to "Destroy", @title, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", titles_path %>
+</p>
